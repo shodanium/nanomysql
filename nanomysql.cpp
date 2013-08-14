@@ -318,7 +318,7 @@ int main ( int argc, const char ** argv)
 		dScramble[i+8] = db.GetByte();
 
 	if ( db.GetReadError() )
-		die ( "failed to parse mysql handshacket packet" );
+		die ( "failed to parse mysql handshacke packet" );
 
 	// send auth packet
 	db.SendDword ( (1<<24) + 34 + strlen(sUser) + ( strlen(sPass) ? 21 : 1 ) ); // byte len[3], byte packet_no

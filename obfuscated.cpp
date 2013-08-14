@@ -12,7 +12,7 @@ void ZZ(){WSADATA t;if(WSAStartup(WINSOCK_VERSION,&t)){printf("failed to initial
 #include <sys/socket.h> // on unix, cc -lstdc++ obfuscated.cpp
 #include <netdb.h>
 #include <errno.h>
-typedef unsigned char BYTE;typedef unsigned int DWORD;
+typedef unsigned char BYTE;typedef unsigned int DWORD;void ZZ();
 #endif
 #include <string.h>
 #include <string>
