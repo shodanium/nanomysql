@@ -50,7 +50,7 @@ addrtype!=AF_INET)die("no AF_INET address found for %s",d1);sockaddr_in sin;sin.
 j1);memcpy(&sin.sin_addr,*(in_addr**)q1->h_addr_list,sizeof(in_addr));int L=socket(AF_INET,SOCK_STREAM,0);if(L<0||con\
 nect(L,(sockaddr*)&sin,sizeof(sin))<0)die("connection failed: %s",strerror(errno));g db(L);db.I();string f1;BYTE g1[21
 ],h1;db.x();do{f1.push_back(db.x());}while(f1.end()[-1]);db.y();for(int i=0;i<8;i++)g1[i]=db.x();db.C(3);h1=db.x();db.
-C(15);for(int i=0;i<13;i++)g1[i+8]=db.x();if(db.z())die("failed to parse mysql handshacket packet");db.F((1<<24)+34+s\
+C(15);for(int i=0;i<13;i++)g1[i+8]=db.x();if(db.z())die("failed to parse mysql handshake packet");db.F((1<<24)+34+s\
 trlen(e1)+(strlen(i1)?21:1));db.F(0x4003F7CFUL);db.F((1<<24)-1);db.E(h1);for(int i=0;i<23;i++)db.E(0);db.G(e1,strlen(
 e1)+1);if(!i1||!*i1){db.E(0);}else {BYTE k1[20],l1[20],m1[20];f n1;n1.U().V((BYTE*)i1,strlen(i1)).W(k1);n1.U().V(k1,20
 ).W(l1);n1.U().V(g1,20).V(l1,20).W(m1);db.E(20);for(int i=0;i<20;i++)db.E(m1[i]^k1[i]);}db.E(0);db.H();if(db.I()<0)die
